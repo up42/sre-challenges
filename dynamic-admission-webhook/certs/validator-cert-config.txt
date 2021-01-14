@@ -1,0 +1,18 @@
+[req]
+default_bits       = 2048
+req_extensions = req_ext
+distinguished_name = req_distinguished_name
+prompt = no
+[ req_distinguished_name ]
+countryName                 = DE
+stateOrProvinceName         = Berlin
+localityName               = Berlin
+organizationName           = UP42
+commonName                 = validator.default.svc
+[ req_ext ]
+subjectAltName = @alt_names
+[ alt_names ]
+DNS.1 = validator
+DNS.2 = validator.default
+DNS.3 = validator.default.svc
+DNS.4 = validator.default.svc.cluster.local
