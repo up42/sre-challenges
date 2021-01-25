@@ -24,6 +24,9 @@ Should contain your code to automate terraform deployment of kubernetes manifest
 
 Should contain your webserver code and the Dockerfile for the webserver. 
 
+## /k8s
+Should contain all you Kubernetes manifest `.yaml` files.
+
 ## /terraform
 
 Should contain all the terraform `.tf` files containing all the tf resources needed.
